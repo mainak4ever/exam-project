@@ -30,6 +30,7 @@ function displayRow(obj) {
 function onSearch(event) {
     if (event.keyCode === 13) {
         const search = document.getElementById('search');
+        console.log(search)
         if (search.value.length < 2) {
             alert('Please enter at least 2 characters');
         } else {
