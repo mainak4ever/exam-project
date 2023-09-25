@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kfene</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-bar">
+                <div class=" nav-left">
+                    <div id="logo"><span>K</span>FENE</div>
+                    <div id="pages">
+                        <a href="./index.html" id="Orders">Orders</a>
+                        <a href="./product.html" id="products">Products</a>
+                        <a href="./users.html" id="users" class="active">Users</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <p id="login">Logout</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Users -->
+            <section>
+                <!-- <div class="page-wrapper"> -->
+                <h1>Users</h1>
+                <form id="search-section">
+                    <input type="text" placeholder="Search by Name" id="search" onkeyup="onSearch(event)">
+                    <button id='reset' onclick="reset()">Reset</button>
+
+                </form>
+                <div id="user-list-section">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope='col'>ID</th>
+                                <th scope='col'>User Avatar</th>
+                                <th scope='col'>Full Name</th>
+                                <th scope='col'>DoB</th>
+                                <th scope='col'>Gender</th>
+                                <th scope='col'>Current Location</th>
+
+                            </tr>
+                        </thead>
+                        <tbody id='table-data-body'>
+                            <!-- <tr class="table-data-row">
+                                <td class="td-id">756-457-5678</td>
+                                <td class="td-avtr">Emmy Granfed</td>
+                                <td class="td-name">11 Mar,2020 <span>3:14 PM</span></td>
+                                <td class="td-dob">$518.23</td>
+                                <td class="td-gender">New</td>
+                                <td class="td-location">New</td>
+                            </tr> -->
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- </div> -->
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="./base.js"></script>
+        <script src="./users.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kfene</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-bar">
+                <div class=" nav-left">
+                    <div id="logo"><span>K</span>FENE</div>
+                    <div id="pages">
+                        <a href="./index.html" id="Orders" class="active">Orders</a>
+                        <a href="./product.html" id="products">Products</a>
+                        <a href="./users.html" id="users">Users</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <p id="login">Logout</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Orders -->
+            <section>
+                <h1>Orders</h1>
+                <div class="page-wrapper">
+                    <div id="left-section">
+                        <h2>Filters</h2>
+                        <h3 id="total-count">Count: 0</h3>
+                        <form>
+
+                            <label for="New">
+                                <input type="checkbox" id="New" name="New" value="New" checked>New</label><br>
+
+                            <label for="Packed">
+                                <input type="checkbox" id="Packed" name="Packed" value="Packed"
+                                    checked>Packed</label><br>
+
+                            <label for="InTransit">
+                                <input type="checkbox" id="InTransit" name="InTransit" value="InTransit"
+                                    checked>InTransit</label><br>
+
+                            <label for="Delivered">
+                                <input type="checkbox" id="Delivered" name="Delivered" value="Delivered"
+                                    checked>Delivered</label><br>
+                        </form>
+                    </div>
+                    <div id="right-section">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope='col'>ID</th>
+                                    <th scope='col'>Customer</th>
+                                    <th scope='col'>Date</th>
+                                    <th scope='col'>Amount</th>
+                                    <th scope='col'>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id='table-data-body'>
+                                <!-- <tr class="table-data-row">
+                                <td class="td-id">756-457-5678</td>
+                                <td class="td-cus">Emmy Granfed</td>
+                                <td class="td-date">11 Mar,2020 <span>3:14 PM</span></td>
+                                <td class="td-amt">$518.23</td>
+                                <td class="td-status">New</td>
+                            </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="./base.js"></script>
+        <script src="./index.js"></script>
+    </body>
+
+</html>

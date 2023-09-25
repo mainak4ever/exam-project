@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kfene</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav-bar">
+                <div class=" nav-left">
+                    <div id="logo"><span>K</span>FENE</div>
+                    <div id="pages">
+                        <a href="./index.html" id="Orders">Orders</a>
+                        <a href="./product.html" id="products" class="active">Products</a>
+                        <a href="./users.html" id="users">Users</a>
+                    </div>
+                </div>
+                <div class="nav-right">
+                    <p id="login">Logout</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Products -->
+            <section>
+
+                <h1>Products</h1>
+                <div class="page-wrapper">
+                    <div id="left-section">
+                        <h2>Filters</h2>
+                        <h3 id="total-count">Count: 0</h3>
+                        <form>
+
+                            <label for="Expired">
+                                <input type="checkbox" id="Expired" name="Expired" value="Expired"
+                                    checked>Expired</label><br>
+
+                            <label for="low-stock">
+                                <input type="checkbox" id="low-stock" name="low-stock" value="low-stock" checked>Low
+                                Stock</label><br>
+                        </form>
+                    </div>
+                    <div id="right-section">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope='col'>ID</th>
+                                    <th scope='col'>Product Name</th>
+                                    <th scope='col'>Product Brand</th>
+                                    <th scope='col'>Expiry Date</th>
+                                    <th scope='col'>Unit Price</th>
+                                    <th scope='col'>Stock</th>
+                                </tr>
+                            </thead>
+                            <tbody id='table-data-body'>
+                                <!-- <tr class="table-data-row">
+                                <td class="td-id">756-457-5678</td>
+                                <td class="td-pdt-name">Emmy Granfed</td>
+                                <td class="td-pdt-brand">11 Mar,2020 <span>3:14 PM</span></td>
+                                <td class="td-exp-date">$518.23</td>
+                                <td class="td-stock">New</td>
+                            </tr> -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.js"
+            integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="./base.js"></script>
+        <script src="./product.js"></script>
+    </body>
+
+</html>
